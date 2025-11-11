@@ -1,7 +1,7 @@
 import React from "react";
 import vector1 from "../assets/vector1.png";
 import vector2 from "../assets/vector2.png";
-const Banner = ({ progressCount }) => {
+const Banner = ({ progressCount, completedCount }) => {
   return (
     <div className="flex justify-between items-center w-11/12 mx-auto p-5 gap-5">
       <div className="rounded-lg bg-linear-to-br from-[rgba(99,46,227,1)] to-[rgba(159,98,242,1)] flex items-center">
@@ -21,7 +21,8 @@ const Banner = ({ progressCount }) => {
           <img src={vector1} alt="" />
         </div>
         <div className="flex flex-col items-center text-white font-bold">
-          <span>Resolved</span>0
+          <span>Resolved</span>
+          {completedCount.length}
         </div>
         <div>
           <img src={vector2} alt="" />
