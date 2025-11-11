@@ -11,6 +11,8 @@ const Players = ({ dataPromise }) => {
   const [completedCount, setCompletedCount] = useState([]);
   const [afterResolved, setAfterResolved] = useState(theData);
 
+  const [dummy, setDummy] = useState(false);
+
   // Card Handler
   const handleClick = (data) => {
     const isExist = progressCount.find((task) => task.id === data.id);
@@ -19,7 +21,7 @@ const Players = ({ dataPromise }) => {
       toast.warn("This task is already in progress.");
       return;
     }
-    toast.info("clicked");
+    toast.info("Task added to progress");
     const newData = [...progressCount, data];
     setProgressCount(newData);
   };
@@ -59,27 +61,29 @@ const Players = ({ dataPromise }) => {
         </div>
         <div className="w-[30%] p-5 space-y-10">
           <div>
-            <h1 className="bold">Task Status</h1>
-            <p className="text-gray-500 py-5">
-              Select a ticket to add to Task Status
-            </p>
-            {progressCount.map((progressTask) => (
-              <TaskStatus
-                completeHandler={completeHandler}
-                key={progressTask.id}
-                progressTask={progressTask}
-              />
-            ))}
+            <h1 className="bold py-5">Task Status</h1>
+
+            <div className="space-y-5">
+              {progressCount.map((progressTask) => (
+                <TaskStatus
+                  completeHandler={completeHandler}
+                  key={progressTask.id}
+                  progressTask={progressTask}
+                />
+              ))}
+            </div>
           </div>
           <div>
-            <h1 className="bold">Resolved Status</h1>
-            <p className="text-gray-500 py-5">No resolved tasks yet.</p>
-            {completedCount.map((completedTask) => (
-              <ResolvedStatus
-                completedTask={completedTask}
-                key={completedTask.id}
-              />
-            ))}
+            <h1 className="bold py-5">Resolved Status</h1>
+
+            <div className="space-y-5">
+              {completedCount.map((completedTask) => (
+                <ResolvedStatus
+                  completedTask={completedTask}
+                  key={completedTask.id}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
