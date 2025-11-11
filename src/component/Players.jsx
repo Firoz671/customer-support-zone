@@ -26,6 +26,7 @@ const Players = ({ dataPromise }) => {
 
   // Complete Handler
   const completeHandler = (data) => {
+    toast.info("Resolved");
     const newCompleted = [...completedCount, data];
     setCompletedCount(newCompleted);
 
