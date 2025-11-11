@@ -4,12 +4,12 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <div className="flex justify-between w-11/12 mx-auto p-5">
+      <div className="flex flex-col md:flex-row items-center justify-between w-11/12 mx-auto p-5">
         <div>
-          <span className="bold">CS-Ticket System</span>
+          <span className="font-bold text-xl">CS-Ticket System</span>
         </div>
-        <div>
-          <ul className="flex items-center gap-5">
+        <div className="w-full md:w-auto">
+          <ul className="flex flex-col md:flex-row items-center gap-5 md:gap-8">
             <li>
               <a href="">Home</a>
             </li>
