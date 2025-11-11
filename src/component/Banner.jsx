@@ -9,7 +9,7 @@ const Banner = ({ progressCount, completedCount }) => {
           <img src={vector1} alt="" />
         </div>
         <div className="flex text-center flex-col items-center text-white  font-bold">
-          <span>In Progress</span>
+          <span className="bold">In Progress</span>
           {progressCount.length}
         </div>
         <div>
@@ -21,7 +21,7 @@ const Banner = ({ progressCount, completedCount }) => {
           <img src={vector1} alt="" />
         </div>
         <div className="flex flex-col items-center text-white font-bold">
-          <span>Resolved</span>
+          <span className="bold">Resolved</span>
           {completedCount.length}
         </div>
         <div>

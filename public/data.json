@@ -6,7 +6,7 @@
     "customer": "Rahim Uddin",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2025-02-10T09:15:23Z"
+    "createdAt": "2025-02-10"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "customer": "Ayesha Akter",
     "priority": "Critical",
     "status": "In Progress",
-    "createdAt": "2025-02-11T13:45:10Z"
+    "createdAt": "2025-02-11"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "customer": "Kamal Hossain",
     "priority": "Medium",
     "status": "Open",
-    "createdAt": "2025-02-12T08:32:55Z"
+    "createdAt": "2025-02-12"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "customer": "Mahmud Hasan",
     "priority": "High",
     "status": "Pending",
-    "createdAt": "2025-02-12T15:18:42Z"
+    "createdAt": "2025-02-12"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "customer": "Nusrat Jahan",
     "priority": "Low",
     "status": "Resolved",
-    "createdAt": "2025-02-13T10:05:00Z"
+    "createdAt": "2025-02-13"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "customer": "Shuvo Ahmed",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2025-02-14T11:20:30Z"
+    "createdAt": "2025-02-14"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "customer": "Maria Chowdhury",
     "priority": "Medium",
     "status": "In Progress",
-    "createdAt": "2025-02-14T17:02:12Z"
+    "createdAt": "2025-02-14"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "customer": "Imran Karim",
     "priority": "Low",
     "status": "Open",
-    "createdAt": "2025-02-15T09:50:11Z"
+    "createdAt": "2025-02-15"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "customer": "Sanjida Rahman",
     "priority": "Low",
     "status": "Pending",
-    "createdAt": "2025-02-15T14:20:45Z"
+    "createdAt": "2025-02-15"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "customer": "Arif Abdullah",
     "priority": "Critical",
     "status": "Open",
-    "createdAt": "2025-02-16T07:15:13Z"
+    "createdAt": "2025-02-16"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "customer": "Rifat Mia",
     "priority": "Medium",
     "status": "In Review",
-    "createdAt": "2025-02-16T10:48:26Z"
+    "createdAt": "2025-02-16"
   },
   {
     "id": 12,
@@ -105,6 +105,6 @@
     "customer": "Tahia Noor",
     "priority": "High",
     "status": "Resolved",
-    "createdAt": "2025-02-17T12:30:00Z"
+    "createdAt": "2025-02-17"
   }
 ]

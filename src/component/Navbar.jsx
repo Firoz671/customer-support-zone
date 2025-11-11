@@ -6,7 +6,7 @@ const Navbar = () => {
     <div>
       <div className="flex justify-between w-11/12 mx-auto p-5">
         <div>
-          <span>CS-Ticket System</span>
+          <span className="bold">CS-Ticket System</span>
         </div>
         <div>
           <ul className="flex items-center gap-5">

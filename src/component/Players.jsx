@@ -41,9 +41,9 @@ const Players = ({ dataPromise }) => {
     <div>
       <Banner completedCount={completedCount} progressCount={progressCount} />
       <div className="w-11/12 mx-auto p-5 flex gap-5">
-        <div className="w-[60%]">
+        <div className="w-[70%]">
           <div>
-            <h1>Customer Ticket</h1>
+            <h1 className="bold">Customer Ticket</h1>
             <div className="grid grid-cols-2">
               {afterResolved.map((players) => {
                 return (
@@ -57,9 +57,12 @@ const Players = ({ dataPromise }) => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="w-[30%] p-5 space-y-10">
           <div>
-            <h1>Task Status</h1>
+            <h1 className="bold">Task Status</h1>
+            <p className="text-gray-500 py-5">
+              Select a ticket to add to Task Status
+            </p>
             {progressCount.map((progressTask) => (
               <TaskStatus
                 completeHandler={completeHandler}
@@ -69,7 +72,8 @@ const Players = ({ dataPromise }) => {
             ))}
           </div>
           <div>
-            <h1>Resolved Status</h1>
+            <h1 className="bold">Resolved Status</h1>
+            <p className="text-gray-500 py-5">No resolved tasks yet.</p>
             {completedCount.map((completedTask) => (
               <ResolvedStatus
                 completedTask={completedTask}
